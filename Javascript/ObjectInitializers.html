@@ -4,13 +4,18 @@
 <head>
     <!--
     Object Initializers are useful when
-    only one instance of a class is necessary
+    few instances of a class are necessary
     -->
     <script type="text/javascript">
         
         // Object Initializers look exactly like Python dictionaries
-        l = {name:"Leonard", species:"Tortoise"} ;
-        m = {name:"Margaret", species:"Toucan"} ;
+        // Add methods to objects as follows:
+        l = {name:"Leonard", species:"Tortoise", communicate:speak};
+        m = {name:"Margaret", species:"Toucan"};
+        
+        function speak() {
+            return "BWAHHHH!";
+        }
         
     </script>
     
@@ -19,7 +24,11 @@
 <body>
 
     <script type="text/javascript">
-        document.write(l.name + " enjoys the company of " + m.name);
+        
+        document.write(l.name + " enjoys the looks of " + m.name);
+        document.write("<br />");
+        document.write("He told her, " + l.communicate());
+        
     </script>
 
 </body>
