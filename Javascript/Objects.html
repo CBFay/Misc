@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>  
+<head>
+    <!--constructors typically go in the head-->
+    <script type="text/javascript">
+        
+        // constructor
+        function animal(name, species) {
+            this.name = name;
+            this.species = species;
+        }
+        
+        // instances of the animal class
+        var j = new animal("Jeff", "Alligator");
+        var k = new animal("Klaus", "Wildabeast");
+        
+    </script>
+    
+</head>
+    
+<body>
+
+    <script type="text/javascript">
+    
+        document.write(j.name + " is a " + j.species + "<br />")
+        document.write(k.name + " is a " + k.species)
+    
+    </script>
+
+</body>
+</html>
