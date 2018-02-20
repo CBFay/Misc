@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+     </head>
+     <body>
+        <!--
+         the defer attribute indicates tht the script won't alter
+        of the page as it is executed, and that it can be run safely
+        after the page has been parsed. Download will begin immediately,
+        but execution will be defered.
+        -->
+         
+        <script type="text/javascript" defer src="localfile.js"></script>
+         
+        <!--
+        the async attribute is like defer, but doesn't guarantee a particular
+        order of execution. Asynchronous scripts should not modify the DOM as
+        they are loading.
+        -->
+         
+        <script type="text/javascript" async src="localfile2.js"></script>
+        <script type="text/javascript" async src="localfile3.js"></script>
+         
+        <!--
+        It's still best to put defered scripts at the bottom of the page.
+        -->
+     </body>
+</html>
