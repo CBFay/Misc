@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html xmlns="">
+
+<head>
+    <script type="text/javascript">
+        
+        function validateFields() {
+            for (i=0; i < document.info.length-1; i++) {
+                var value = document.info.elements[i].value;
+                if (isInvalid(value)) {
+                    var fieldname = document.info.elements[i].name;
+                    var message = "Please enter a valid ".concat(fieldname);
+                    alert(message);
+                    return false;
+                }
+            }
+            alert("Registered")
+            location.reload();
+            return true;
+        }
+        
+        function isInvalid(val) {
+            if ((0 < val.length) && (val.length < 15)) {
+                return false;
+            }
+            return true;
+        }
+        
+    </script>
+</head>
+    
+<body>
+    <form name="info">
+        Username: <input type="text" name="username" />
+        Password: <input type="password" name="password" />
+        <input type="button" name="confirm" value="confirm" onClick="validateFields()" />
+    </form>
+
+</body>
+    
+</html>
