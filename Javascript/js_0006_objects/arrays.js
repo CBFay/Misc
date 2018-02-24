@@ -51,10 +51,10 @@ numbers.forEach(print);
 Array.from("example");
 // Creates a new Array instance from an array-like or iterable object.
 
-Array.isArray();
+Array.isArray("example");
 // Returns true if a variable is an array, if not false.
 
-Array.of();
+Array.of("example");
 /* Creates a new Array instance with a variable number of arguments,
  * regardless of number or type of the arguments. */
 
