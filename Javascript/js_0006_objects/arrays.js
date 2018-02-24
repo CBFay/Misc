@@ -22,9 +22,6 @@ numbers.shift();
 // returns the new length
 numbers.unshift(2);
 
-// remove and return the first element in the array
-numbers.shift();
-
 // return the index of the given element, or -1 if it's not present
 numbers.indexOf(7);
 
